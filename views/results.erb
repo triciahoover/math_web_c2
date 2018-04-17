@@ -1,0 +1,13 @@
+
+You chose that you would like to do <%= math_type %>
+<br>
+The numbers you are were <%= p1 %> and <%= p2 %>
+<br>
+
+<% if math_type == "subtraction" %>
+<%	result = subtraction(p1.to_i, p2.to_i) %>
+Your result is <%= result %>
+<% elsif math_type == "addition" %>
+<%	result = addition(p1.to_i, p2.to_i) %>
+Your result is <%= result %>
+<% end %>
